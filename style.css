@@ -1,0 +1,11 @@
+body{
+    background-color: blue;
+}
+hr{
+    background-color: white;
+    border:dotted;
+    border-color: grey;
+    border-width: 20px;
+    width: 5%;
+
+}
