@@ -16,4 +16,21 @@ width: 200px;
 height:200px;
 
 
+
+}
+.essaye,img{
+
+    position:relative;
+    left:200px;
+    display:inline-block;
+}
+
+.essaye1,img{
+    position:relative;
+    display:inline-block;
+    left:200px;
+    margin:20px;
+    margin-bottom: 100x;
+    padding:30px;
+
 }
