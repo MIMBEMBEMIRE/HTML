@@ -31,8 +31,19 @@ window.addEventListener("mousemove", (e) =>{
 
 });
 window.addEventListener("mousedown",() =>{
-    mouse1.style.transform ="scale(2)";
-})
+    mouse1.style.transform ="scale(2) translate(-25%,-25%)";
+});
+
+window.addEventListener("mouseup",() =>{
+    mouse1.style.transform ="scale(2) translate(-50%,-50%)";
+    mouse1.style.border = "2px solid teal"
+});
+
+clika.addEventListener("mouseup",() =>{
+clika.style.background = "rgba(0,0,0,0)";
+});
+
+
 
 
 
