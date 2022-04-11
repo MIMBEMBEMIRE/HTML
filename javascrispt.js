@@ -14,8 +14,7 @@ clika.classList.add("questio1");
 });
 
 bnt1.addEventListener("click", () => {
-answer.style.visibility="visible";
-answer.style.background ="yellow";
+answer.classList.add("showreponse");
 });
 
 bnt2.addEventListener("click", () =>{
