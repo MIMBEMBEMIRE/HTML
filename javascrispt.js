@@ -12,3 +12,19 @@ console.log("hello world");
      post:"luwaba",
  }
  console.log(object.age);
+ //operator
+ let total =2;
+ let x=4;
+ x++;
+ total=x
+ console.log(total);
+ function nom(){
+     console.log("hello");
+     console.log("how are you;")
+ }
+ nom();
+ const noms =() =>{
+     console.log("how are you?");
+     console.log("Imfine")
+ };
+ noms();
