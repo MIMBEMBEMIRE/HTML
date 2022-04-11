@@ -1,36 +1,22 @@
-
-
-.essaye{
-background-color: red;
-width:200px;
-height:200px;
-margin:10px;
-padding:10px;
-margin-top: 70px;
-
+*{
+    box-sizing:border-box;
+    font-family: "Segoe",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
 }
-
-.essaye1{
-background-color: #FEB139;
-width: 200px;
-height:200px;
-
-
-
+body{
+    text-align: center;
+    margin:0;
+   color:white;
+    min-height: 200vh;
 }
-.essaye,img{
-
-    position:relative;
-    left:200px;
-    display:inline-block;
+.box{
+    border:6px solid white;
+    transition:0.25s ease;
+    background-color: black;
 }
-
-.essaye1,img{
-    position:relative;
-    display:inline-block;
-    left:200px;
-    margin:20px;
-    margin-bottom: 100x;
-    padding:30px;
+p{
+    visibility:hidden;
+    width:240px;
+    margin:10px auto 0;
 
 }
