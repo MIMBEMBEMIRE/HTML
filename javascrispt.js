@@ -42,6 +42,9 @@ window.addEventListener("mouseup",() =>{
 clika.addEventListener("mouseup",() =>{
 clika.style.background = "rgba(0,0,0,0)";
 });
+clika.addEventListener("mouseout",() =>{
+    clika.style.background = "yellow";
+    });
 
 
 
