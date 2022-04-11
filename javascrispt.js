@@ -15,11 +15,14 @@ clika.classList.add("questio1");
 
 bnt1.addEventListener("click", () => {
 answer.style.visibility="visible";
+answer.style.background ="yellow";
 });
 
 bnt2.addEventListener("click", () =>{
 
-    console.log("click!");
+   answer.style.visibility ="visibible";
+   answer.style.background ="black";
 });
+
 
 
