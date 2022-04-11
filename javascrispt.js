@@ -47,6 +47,22 @@ clika.addEventListener("mouseout",() =>{
     });
 
 
+    //keypretById("key");
+
+const keypress1 = document.querySelector(".keypress1");
+const key = document.getElementById("key");
+ document.addEventListener("keypress", (e) => {
+
+key.textContent = e.key;
+
+if(e.key==="j"){
+    keypress1.style.background="blue";
+}else if(e.key==="u"){
+    keypress1.style.background ="red";
+}
+
+});
+
 
 
 
