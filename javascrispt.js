@@ -22,6 +22,17 @@ bnt2.addEventListener("click", () =>{
    answer.style.visibility ="visibible";
    answer.style.background ="black";
 });
+//---------------------------------------------
+
+const mouse1 = document.querySelector(".mousemove");
+window.addEventListener("mousemove", (e) =>{
+    mouse1.style.left =e.pageX + "px";
+    mouse1.style.top =e.pageY + "px";
+
+});
+window.addEventListener("mousedown",() =>{
+    mouse1.style.transform ="scale(2)";
+})
 
 
 
