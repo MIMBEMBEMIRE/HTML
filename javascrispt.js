@@ -28,3 +28,18 @@ console.log("hello world");
      console.log("Imfine")
  };
  noms();
+
+ //function avec le paramettre
+
+ function cal(x,y){
+     return(x+y);
+ }
+ cal(2+3);
+
+
+// une function qui se joue toute seul
+
+(function nom1(){
+    console.log("Enter your variaable")
+})();
+ 
