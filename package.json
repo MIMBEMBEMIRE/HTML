@@ -1,0 +1,22 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MIMBEMBEMIRE/HTML.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MIMBEMBEMIRE/HTML/issues"
+  },
+  "homepage": "https://github.com/MIMBEMBEMIRE/HTML#readme",
+  "dependencies": {
+    "mongodb": "^4.5.0"
+  }
+}
