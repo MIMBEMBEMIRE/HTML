@@ -1,98 +1,141 @@
-*{
-    box-sizing:border-box;
-    font-family: "Segoe",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    list-style: none;
-}
 body{
-    text-align: center;
-    margin:0;
-    color:black;
-   
-    min-height: 200vh;
+    
+    
+    font-family: "Montserrat";
 }
-.box{
-    border:6px solid white;
-    transition:0.25s ease;
-    background-color: black;
+
+
+.title{
+    background-color: blue;
+}
+div h1{
+    font-family: "Montserrat-Black";
+    font-size:2.5rem;
+    line-height: 1,5;
+    color:white;
+   
+    
+
+    
+}
+ 
+ .container{
+     background-color:blue;
+ }
+.container-fluid{
+   
+background-color:orangered;
+padding:3% 15%;
+}
+
+.col-lg-6 img{
+    width: 300px;
+    height: 400px;
+    padding-top: 100px;
+   
+    
+
+}
+.navbar{
+
+    padding-bottom: 0 0 4.5rem;
+
+}
+.navbar-brand{
+    font-family: "ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:white
+}
+
+.nav-item{
+    padding:0 18px;
+}
+.nav-link{
+    font-size:1.2rem;
+    font-family: "Montserrat-Light";
+    color:white;
+
+}
+.downlod-class{
+    margin:5% 3% 5% 0;
+}
+.title-image{
+    width: 6%;
+    transform: rotate(25deg);
+    
+}
+#feature{
+    padding:7% 15%;
+
+    background-color: #fff;
+    position:relative;
+    z-index:1;
+
+
+}
+.lc-lc{
+    text-align: center;
+    padding:5%;
+
+}
+h3{
+    font-family:"Montserrat-Bold" ;
 }
 p{
-    visibility:hidden;
-    width:240px;
-    margin:10px auto 0;
-    opacity: 0;
-    transition:0.6s;
-transform: translateX(-200px);
+    color: #8f8f8f;
 }
-.questio1{
-    background-color: red;
-    border-radius: 30px;
-    border:6px dashed pink;
-}
-.showreponse{
-    visibility: visible;
-    opacity: 1;
-    background-color: pink;
-    transform: translateX(0) ;
-}
-.mousemove{
-height: 50px;
-width: 50px;
-border:2px solid blue;
-position:absolute;
-transform:translateX(-50%,-50%);
-border-radius: 50px;
-transition: 3s ease;
-z-index:-1;
-}
-.keypress1{
-    background-color: black;
-}
+.icon{
+    color: rgb(224, 13, 48);
+    margin:1rem;
 
-
-
-nav{
-    background:pink;
-    width:100%;
-    height:50px;
-    top:50px;
-    transition:0.3s;
 }
-ul{
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
-    padding:0;
+.icon:hover{
+    color:#ff4c68;
 }
-
-
-#navbar {
-    background-color: #333;
-    position: fixed;
-    top: -50px;
-    width: 100%;
-    display: block;
-    transition: top 0.3s;
-  }
-  #navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
+#temoin{
+    padding:7% 15%;
     text-align: center;
-    padding: 15px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  #navbar a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  .hello{
-      background-color: red;
-      
-  }
-  p{
-      color:white;
-  }
-  .e{
-      color:red;
-  }
+    background-color:rgb(224, 13, 48); 
+    
+
+}
+#temoin h2{
+    color:white;
+    font-family: "Montserrat-Bold";
+    font-size: 2rem;
+    line-height: 1.5;
+
+}
+
+#temoin img{
+    width: 10%;
+    border-radius: 100%;
+    margin:2%;
+
+
+}
+#m5{
+    background-color:rgb(224, 13, 48); 
+     
+     text-align: center;
+     padding-bottom: 5%;
+
+}
+#m5 img{
+   width: 15%;
+   margin:5%;
+}
+.card-deck{
+    text-align: center;
+}
+.row{
+    padding:50px;
+
+    margin:10%;
+    display:flex;
+}
+.card{
+    margin:40px;
+    font-size:30px;
+}
