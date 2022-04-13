@@ -40,3 +40,10 @@ perso.deleteOne({name:"pink"},function(err){
         console.log("sucess deleted;")
     }
 });
+perso.deleteMany({addresse:"kananga"},function(err){
+    if(err){
+        console.log("error")
+    }else{
+        console.log("many deleted");
+    }
+});
