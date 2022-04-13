@@ -33,3 +33,10 @@ perso.updateOne({id:"625690a8f1b80d03c7a4afcb"},{name:"pink"},function(err){
         console.log("success");
     }
 });
+perso.deleteOne({name:"pink"},function(err){
+    if(err){
+        console.log("err")
+    }else{
+        console.log("sucess deleted;")
+    }
+});
