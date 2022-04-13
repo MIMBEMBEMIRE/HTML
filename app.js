@@ -4,10 +4,10 @@ mongoose.connect("mongodb://localhost:27017/Stoks", {
     useNewUrlParser: "true"});
 
 console.log("suscess");
-const stokSchema = new mongoose.Schema({ name:String, rating:{type:Number,min:1,max:10}, review:String});
+const stokSchema = new mongoose.Schema({name:{type:String,required:[true,"please enter the name"]},rating:{type:Number,min:1,max:10}, review:String});
 
 const prod = mongoose.model("produi",stokSchema)
-const prod1 = new prod({name:"mireille",rating:4,review:"aimer"});
+const prod1 = new prod({rating:4,review:"aimer"});
 
 
 const personneShema = new mongoose.Schema({name:String,age:Number,addresse:String});
@@ -25,4 +25,11 @@ perso.insertMany([personna,personel,personne1,] ,function(err){
         console.log("succesfully");
     }
 
+});
+perso.updateOne({id:"625690a8f1b80d03c7a4afcb"},{name:"pink"},function(err){
+    if(err){
+        console.log(err);
+    }else{
+        console.log("success");
+    }
 });
