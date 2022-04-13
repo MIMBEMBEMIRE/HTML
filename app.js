@@ -26,4 +26,10 @@ perso.insertMany([personna,personel,personne1,] ,function(err){
     }
 
 });
-
+perso.find(function(erro, personnes){
+    if(erro){
+        console.log(erro);
+    }else{
+        console.log(personnes);
+    }
+})
