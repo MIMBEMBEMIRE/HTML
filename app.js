@@ -8,13 +8,14 @@ const stokSchema = new mongoose.Schema({name:{type:String,required:[true,"please
 
 const prod = mongoose.model("produi",stokSchema)
 const prod1 = new prod({rating:4,review:"aimer"});
-
-
-const personneShema = new mongoose.Schema({name:String,age:Number,addresse:String});
+const perSchema =new mongoose.Schema({name:String,age:Number})
+const personneShema = new mongoose.Schema({name:String,age:Number,addresse:String,favorite:perSchema});
 const perso = mongoose.model("personnes", personneShema);
 const personna = new perso({name:"mirayessa",age:7,addresse:"chelikere"});
+const per = new perso({name:"maki",age:30,adrresse:"ahme"});
+per.save();
 
-const personel = new perso({name:"mimbembe",age:2,addresse:"kananga",});
+const personel = new perso({name:"any",age:2,addresse:"kananga",favorite:per});
 
 const personne1 = new perso({name:"mim",age:4,addresse:"kananga",});
 
