@@ -8,7 +8,7 @@ app.get("/", function(req, res){
     if(today.getDay() === 6 || today.getDay() === 0){
         res.send("tday is a weeks");
     } else{
-        res.send("toda is a working days");
+        res.sendFile(__dirname + "/index.html");
     }
 });
     
