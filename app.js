@@ -1,16 +1,24 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const { use } = require("express/lib/application");
 const app =express();
+
+app.set('view engine', 'ejs');
 
 app.get("/", function(req, res){
     
     var today = new Date();
-    if(today.getDay() === 6 || today.getDay() === 0){
-        res.send("tday is a weeks");
-    } else{
-        res.sendFile(__dirname + "/index.html");
+    var currentDay = today.getDay();
+    var day=""
+    if(currentDay === 6 || currentDay === 0){
+    day="wesnesday"
+    res.render("list",{wday:day});
+    }else{
+        res.render("list",{wday :day});
     }
+
 });
+
     
 
 
