@@ -8,6 +8,17 @@
 </head>
 <body>
     <h1>to day is <%= weekedly %></h1>
-    <p>how are not working</p>
+    <ul>
+        <l>Food</l>
+        <li>cook Food</li>
+        <li>Eat the food</li>
+
+        <% for(var i=0;i<newlistitem.length;i++){%>
+            <li><%= newlistitem[i] %></li><%}%>
+    </ul>
+    <form action="/" method="post">
+        <input type="text" name="newItem">
+        <button type="submit">add</button>
+    </form>
 </body>
 </html>

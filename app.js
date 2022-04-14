@@ -1,9 +1,12 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const { use } = require("express/lib/application");
 const app =express();
 
+app.use(bodyParser.urlencoded({ extended: true }));
+
 app.set('view engine', 'ejs');
+var items=["food","manag","soudi"];
+var item="";
 
 app.get("/", function(req, res){
     
@@ -14,10 +17,16 @@ app.get("/", function(req, res){
         month:"long"
     },
     day=today.toLocaleDateString("en-us",options);
-    res.render("list",{weekedly:day})
+    res.render("list",{weekedly:day,newlistitem:items})
 
 });
+app.post("/",function(req, res){
+    item=req.body.newItem;
+   items.push(item);
+    
+    res.redirect("/");
 
+});
     
 
 
