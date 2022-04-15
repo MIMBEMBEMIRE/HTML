@@ -8,21 +8,22 @@
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-    <div class="box" id="heading">
-    <h1>to day is <%= weekedly %></h1>
-    </div>
-    <div class="box">
     
-        
-        <% for(var i=0;i<newlistitem.length;i++){%>
-            <div class="item">
-            <p><%= newlistitem[i] %></li><%}%>
-            </div>
-    </div>
-    <form action="/" method="post">
+    <h1>to day is <%= listTitle %></h1>
+
+
+   <% newlistitem.forEach(function(item){ %>
+        <p><%=item.name %></p>
+
+
+   <% });%>
+    
+       
+    
+<form action="/" method="post">
         <input type="text" name="newItem">
-        <button type="submit" name="valida" value="<%=weekedly%>">add</button>
+        <button type="submit" name="valida" value="<%=listTitle%>">add</button>
     </form>
-    <div>
+    
 </body>
 </html>
