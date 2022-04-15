@@ -51,7 +51,17 @@ app.post("/",function(req, res){
     item.save();
     res.redirect("/");
 });
+app.post("/delete",function(req,res){
+    const check= req.body.checkox;
+    Item.findByIdAndRemove(check,function(err){
+        if(err){
+            console.log("succefuly deleted");
 
+        }
+        res.redirect("/");
+    })
+
+})
 });
 
 app.listen(3000,function(){

@@ -13,14 +13,17 @@
 
 
    <% newlistitem.forEach(function(item){ %>
+    <form action="/delete" method="post"> 
+        <input type="checkbox"  value="<%=item._id%>" name="checkox" onChange="this.form.submit()">
         <p><%=item.name %></p>
+        </form>
 
-
-   <% });%>
+<% });%>
     
        
     
 <form action="/" method="post">
+    <input type="checkbox">
         <input type="text" name="newItem">
         <button type="submit" name="valida" value="<%=listTitle%>">add</button>
     </form>
