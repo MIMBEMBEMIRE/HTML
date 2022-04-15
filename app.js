@@ -1,13 +1,15 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const req = require("express/lib/request");
 const app =express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static("public"));
 
 app.set('view engine', 'ejs');
 var items=["food","manag","soudi"];
 var item="";
-
+var workitems=[];
 app.get("/", function(req, res){
     
     var today = new Date();
@@ -29,9 +31,21 @@ app.post("/",function(req, res){
 });
     
 
+app.get("/work",function(req,res){
 
-
-
+res.render("list",{weekedly:"worklist",newlistitem:workitems});
+})
+app.post("/work",function(req, res){
+let item = req.body.newItem
+if(req.body.valida ==="work"){
+    workitems.push(item);
+    res.redirect("/work");
+}else{
+    item.push(item);
+}
+    
+    res.redirect("/")
+})
 app.listen(3000,function(){
     console.log("the server is running sucess full")
 });
