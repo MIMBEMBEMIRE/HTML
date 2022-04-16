@@ -8,17 +8,22 @@
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-    
     <h1>to day is <%= listTitle %></h1>
+<div class="box">
+    <% newlist1.forEach(function(item){%>
+    <input type="checkbox">
+        <p><%= item.name %></p>
+
+<%})%>
+    </div>
 
 
-   <% newlistitem.forEach(function(item){ %>
-    <form action="/delete" method="post"> 
-        <input type="checkbox"  value="<%=item._id%>" name="checkox" onChange="this.form.submit()">
-        <p><%=item.name %></p>
-        </form>
 
-<% });%>
+    
+
+
+  
+    
     
        
     
